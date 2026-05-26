@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="es">
 
@@ -549,3 +550,556 @@ Agregar
 </body>
 
 </html>
+=======
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Menú - ICEE SHOT</title>
+
+<link rel="stylesheet" href="styles.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+<div class="logo">
+ICEE SHOT
+</div>
+
+<ul>
+
+<li><a href="index.html">Inicio</a></li>
+<li><a href="menu.html">Menú</a></li>
+<li><a href="nosotros.html">Nosotros</a></li>
+<li><a href="index.html#contacto">Contacto</a></li>
+
+</ul>
+
+</nav>
+
+<!-- BOTÓN CARRITO -->
+
+<div class="cart-toggle" onclick="openCart()">
+
+🛒
+
+<span id="cart-count">0</span>
+
+</div>
+
+<!-- CARRITO -->
+
+<div class="cart" id="cart">
+
+<div class="cart-header">
+
+<h2>🛒 Carrito</h2>
+
+<button class="close-cart" onclick="closeCart()">
+✕
+</button>
+
+</div>
+
+<div id="cart-items"></div>
+
+<div class="cart-summary">
+
+<div class="cart-row">
+
+<span>Subtotal:</span>
+
+<span id="subtotal">$0</span>
+
+</div>
+
+<div class="cart-row">
+
+<span>Envío:</span>
+
+<span id="shipping">$0</span>
+
+</div>
+
+</div>
+
+<div class="total">
+Total: $<span id="total">0</span>
+</div>
+
+<button class="whatsapp-btn" onclick="sendWhatsApp()">
+
+PEDIR POR WHATSAPP 
+
+</button>
+
+<button class="close-btn" onclick="closeCart()">
+
+Cerrar
+
+</button>
+
+</div>
+
+<!-- HEADER MENU -->
+
+<section class="menu-header">
+
+<h1>Nuestro Menú</h1>
+
+<p>Elige tus bebidas favoritas</p>
+
+</section>
+
+<!-- FILTROS -->
+
+<section class="menu-filters">
+
+<button class="filter-btn active" onclick="filterProducts('todos')">Todos</button>
+
+<button class="filter-btn" onclick="filterProducts('shots')">Shots</button>
+
+<button class="filter-btn" onclick="filterProducts('cocteles')">Cócteles</button>
+
+<button class="filter-btn" onclick="filterProducts('gummies')">Gummies & Toppings</button>
+
+<button class="filter-btn" onclick="filterProducts('botellasshots')">Botellas & Licores</button>
+
+</section>
+
+<!-- PRODUCTOS -->
+
+<section class="products" id="menu">
+
+<div class="product-grid">
+
+<!-- SHOTS -->
+
+<div class="card" data-category="shots">
+
+<div class="badge">SHOT</div>
+
+<img src="https://images.unsplash.com/photo-1551538827-9c037cb4f32a?q=80&w=1200">
+
+<div class="card-content">
+
+<h3>Blue Neon</h3>
+
+<p>Shot de vodka con licor azul y gummies brillantes</p>
+
+<div class="price">
+$120
+</div>
+
+<button onclick="addToCart('Blue Neon', 120, 'https://images.unsplash.com/photo-1551538827-9c037cb4f32a?q=80&w=1200')" class="add-btn">
+
+Agregar
+
+</button>
+
+</div>
+
+</div>
+
+<div class="card" data-category="shots">
+
+<div class="badge">SHOT</div>
+
+<img src="https://images.unsplash.com/photo-1556742212-5b321e3098ea?q=80&w=1200">
+
+<div class="card-content">
+
+<h3>Pink Party</h3>
+
+<p>Shot tropical con tequila, jugo de arándano y gummies</p>
+
+<div class="price">
+$150
+</div>
+
+<button onclick="addToCart('Pink Party', 150, 'https://images.unsplash.com/photo-1556742212-5b321e3098ea?q=80&w=1200')" class="add-btn">
+
+Agregar
+
+</button>
+
+</div>
+
+</div>
+
+<div class="card" data-category="shots">
+
+<div class="badge">SHOT</div>
+
+<img src="https://images.unsplash.com/photo-1535958636474-b021ee887b13?q=80&w=1200">
+
+<div class="card-content">
+
+<h3>Cyber Green</h3>
+
+<p>Shot de melocotón con licor verde neón y caramelos</p>
+
+<div class="price">
+$130
+</div>
+
+<button onclick="addToCart('Cyber Green', 130, 'https://images.unsplash.com/photo-1535958636474-b021ee887b13?q=80&w=1200')" class="add-btn">
+
+Agregar
+
+</button>
+
+</div>
+
+</div>
+
+<div class="card" data-category="shots">
+
+<div class="badge">SHOT</div>
+
+<img src="https://images.unsplash.com/photo-1608489033489-2ec46a5e84f3?q=80&w=1200">
+
+<div class="card-content">
+
+<h3>Purple Dream</h3>
+
+<p>Shot de vodka con licor de uva y gummies morados</p>
+
+<div class="price">
+$140
+</div>
+
+<button onclick="addToCart('Purple Dream', 140, 'https://images.unsplash.com/photo-1608489033489-2ec46a5e84f3?q=80&w=1200')" class="add-btn">
+
+Agregar
+
+</button>
+
+</div>
+
+</div>
+
+<!-- CÓCTELES -->
+
+<div class="card" data-category="cocteles">
+
+<div class="badge">CÓCTEL</div>
+
+<img src="https://images.unsplash.com/photo-1587574294547-c3b1ba40c72d?q=80&w=1200">
+
+<div class="card-content">
+
+<h3>Neon Explosion</h3>
+
+<p>Cóctel con vodka, Ron, licores de colores y gummies flotantes</p>
+
+<div class="price">
+$200
+</div>
+
+<button onclick="addToCart('Neon Explosion', 200, 'https://images.unsplash.com/photo-1587574294547-c3b1ba40c72d?q=80&w=1200')" class="add-btn">
+
+Agregar
+
+</button>
+
+</div>
+
+</div>
+
+<div class="card" data-category="cocteles">
+
+<div class="badge">CÓCTEL</div>
+
+<img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=1200">
+
+<div class="card-content">
+
+<h3>Cosmic Vibe</h3>
+
+<p>Cóctel con tequila, licor de curaçao azul y zumo fresco</p>
+
+<div class="price">
+$210
+</div>
+
+<button onclick="addToCart('Cosmic Vibe', 210, 'https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=1200')" class="add-btn">
+
+Agregar
+
+</button>
+
+</div>
+
+</div>
+
+<div class="card" data-category="cocteles">
+
+<div class="badge">CÓCTEL</div>
+
+<img src="https://images.unsplash.com/photo-1580959375944-abd7e991f971?q=80&w=1200">
+
+<div class="card-content">
+
+<h3>Electric Sunset</h3>
+
+<p>Cóctel tropical con ron, zumo de piña y licor naranja</p>
+
+<div class="price">
+$190
+</div>
+
+<button onclick="addToCart('Electric Sunset', 190, 'https://images.unsplash.com/photo-1580959375944-abd7e991f971?q=80&w=1200')" class="add-btn">
+
+Agregar
+
+</button>
+
+</div>
+
+</div>
+
+<!-- GUMMIES & TOPPINGS -->
+
+<div class="card" data-category="gummies">
+
+<div class="badge">EXTRA</div>
+
+<img src="https://images.unsplash.com/photo-1599599810694-b5ac4dd64e4b?q=80&w=1200">
+
+<div class="card-content">
+
+<h3>Gummy Mix Premium</h3>
+
+<p>Variedad de gummies brillantes para decorar tus bebidas</p>
+
+<div class="price">
+$60
+</div>
+
+<button onclick="addToCart('Gummy Mix Premium', 60, 'https://images.unsplash.com/photo-1599599810694-b5ac4dd64e4b?q=80&w=1200')" class="add-btn">
+
+Agregar
+
+</button>
+
+</div>
+
+</div>
+
+<div class="card" data-category="gummies">
+
+<div class="badge">EXTRA</div>
+
+<img src="https://images.unsplash.com/photo-1599599810694-b5ac4dd64e4b?q=80&w=1200">
+
+<div class="card-content">
+
+<h3>Popping Candy</h3>
+
+<p>Caramelos que explotan en la boca con diversos sabores</p>
+
+<div class="price">
+$45
+</div>
+
+<button onclick="addToCart('Popping Candy', 45, 'https://images.unsplash.com/photo-1599599810694-b5ac4dd64e4b?q=80&w=1200')" class="add-btn">
+
+Agregar
+
+</button>
+
+</div>
+
+</div>
+
+<div class="card" data-category="gummies">
+
+<div class="badge">EXTRA</div>
+
+<img src="https://images.unsplash.com/photo-1599599810694-b5ac4dd64e4b?q=80&w=1200">
+
+<div class="card-content">
+
+<h3>Sprinkles & Topping Neon</h3>
+
+<p>Toppings brillantes que brillan bajo luz UV</p>
+
+<div class="price">
+$50
+</div>
+
+<button onclick="addToCart('Sprinkles & Topping Neon', 50, 'https://images.unsplash.com/photo-1599599810694-b5ac4dd64e4b?q=80&w=1200')" class="add-btn">
+
+Agregar
+
+</button>
+
+</div>
+
+</div>
+
+<!-- BOTELLAS & LICORES -->
+
+<div class="card" data-category="botellasshots">
+
+<div class="badge">BOTELLA</div>
+
+<img src="https://images.unsplash.com/photo-1559056199-641a0ac8b3f4?q=80&w=1200">
+
+<div class="card-content">
+
+<h3>Botella Vodka Premium</h3>
+
+<p>Vodka de calidad para mezclar en tus bebidas favoritas</p>
+
+<div class="price">
+$350
+</div>
+
+<button onclick="addToCart('Botella Vodka Premium', 350, 'https://images.unsplash.com/photo-1559056199-641a0ac8b3f4?q=80&w=1200')" class="add-btn">
+
+Agregar
+
+</button>
+
+</div>
+
+</div>
+
+<div class="card" data-category="botellasshots">
+
+<div class="badge">BOTELLA</div>
+
+<img src="https://images.unsplash.com/photo-1618909889389-d8f2a8d3f77f?q=80&w=1200">
+
+<div class="card-content">
+
+<h3>Botella Tequila Gold</h3>
+
+<p>Tequila auténtico mexicano de excelente calidad</p>
+
+<div class="price">
+$400
+</div>
+
+<button onclick="addToCart('Botella Tequila Gold', 400, 'https://images.unsplash.com/photo-1618909889389-d8f2a8d3f77f?q=80&w=1200')" class="add-btn">
+
+Agregar
+
+</button>
+
+</div>
+
+</div>
+
+<div class="card" data-category="botellasshots">
+
+<div class="badge">BOTELLA</div>
+
+<img src="https://images.unsplash.com/photo-1535958636474-b021ee887b13?q=80&w=1200">
+
+<div class="card-content">
+
+<h3>Botella Ron Especiado</h3>
+
+<p>Ron tropical con especias para cócteles exóticos</p>
+
+<div class="price">
+$380
+</div>
+
+<button onclick="addToCart('Botella Ron Especiado', 380, 'https://images.unsplash.com/photo-1535958636474-b021ee887b13?q=80&w=1200')" class="add-btn">
+
+Agregar
+
+</button>
+
+</div>
+
+</div>
+
+<div class="card" data-category="botellasshots">
+
+<div class="badge">LICOR</div>
+
+<img src="https://images.unsplash.com/photo-1543705686-01e01359e113?q=80&w=1200">
+
+<div class="card-content">
+
+<h3>Licor Curaçao Azul</h3>
+
+<p>Licor azul neón perfecto para shots y cócteles</p>
+
+<div class="price">
+$320
+</div>
+
+<button onclick="addToCart('Licor Curaçao Azul', 320, 'https://images.unsplash.com/photo-1543705686-01e01359e113?q=80&w=1200')" class="add-btn">
+
+Agregar
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="footer-content">
+
+<div class="footer-section">
+<h4>ICEE SHOT</h4>
+<p>Bebidas que encienden tu noche</p>
+</div>
+
+<div class="footer-section">
+<h4>Enlaces Rápidos</h4>
+<ul>
+<li><a href="index.html">Inicio</a></li>
+<li><a href="menu.html">Menú</a></li>
+<li><a href="nosotros.html">Nosotros</a></li>
+</ul>
+</div>
+
+<div class="footer-section">
+<h4>Síguenos</h4>
+<div class="social-links">
+<a href="#" class="social-icon">📱</a>
+<a href="#" class="social-icon">📘</a>
+<a href="#" class="social-icon">📸</a>
+</div>
+</div>
+
+</div>
+
+<div class="footer-bottom">
+© 2026 ICEE SHOT - Todos los derechos reservados
+</div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
+>>>>>>> 34e8d2a6167d80f98b6827c6b08f648d81ab99ff
