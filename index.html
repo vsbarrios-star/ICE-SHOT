@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ICEE SHOT - Bebidas Neon</title>
+
+<link rel="stylesheet" href="styles.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+<div class="logo">
+ICEE SHOT
+</div>
+
+<ul>
+
+<li><a href="index.html">Inicio</a></li>
+<li><a href="menu.html">Menú</a></li>
+<li><a href="nosotros.html">Nosotros</a></li>
+<li><a href="#contacto">Contacto</a></li>
+
+</ul>
+
+</nav>
+
+<!-- BOTÓN CARRITO -->
+
+<div class="cart-toggle" onclick="openCart()">
+
+🛒
+
+<span id="cart-count">0</span>
+
+</div>
+
+<!-- CARRITO -->
+
+<div class="cart" id="cart">
+
+<div class="cart-header">
+
+<h2>🛒 Carrito</h2>
+
+<button class="close-cart" onclick="closeCart()">
+✕
+</button>
+
+</div>
+
+<div id="cart-items"></div>
+
+<div class="total">
+Total: $<span id="total">0</span>
+</div>
+
+<button class="whatsapp-btn" onclick="sendWhatsApp()">
+
+PEDIR POR WHATSAPP
+
+</button>
+
+</div>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>
+ICEE <span>SHOT</span>
+</h1>
+
+<p>
+
+Bebidas que encienden tu noche.
+Cócteles únicos con sabores explosivos,
+gummies, licores y el mejor ambiente neon.
+
+</p>
+
+<a href="menu.html" class="btn">
+
+VER MENÚ COMPLETO
+
+</a>
+
+</div>
+
+<div class="hero-image">
+
+<img src="https://pngimg.com/d/cocktail_PNG143.png">
+
+</div>
+
+</section>
+
+<!-- CARACTERÍSTICAS -->
+
+<section class="features">
+
+<h2>¿Por qué elegir ICEE SHOT?</h2>
+
+<div class="features-grid">
+
+<div class="feature-card">
+<div class="feature-icon">🧊</div>
+<h3>Sabores Explosivos</h3>
+<p>Cócteles únicos con combinaciones de sabores intensos y refrescantes</p>
+</div>
+
+<div class="feature-card">
+<div class="feature-icon">✨</div>
+<h3>Ambiente Neon</h3>
+<p>Vive la experiencia en nuestro ambiente vibrante con luces LED</p>
+</div>
+
+<div class="feature-card">
+<div class="feature-icon">🍹</div>
+<h3>Bebidas Premium</h3>
+<p>Licores premium y gummies de la más alta calidad</p>
+</div>
+
+<div class="feature-card">
+<div class="feature-icon">⚡</div>
+<h3>Entregas Rápidas</h3>
+<p>Pide por WhatsApp y recibe tu pedido en el menor tiempo</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- NEWSLETTER -->
+
+<section class="newsletter" id="contacto">
+
+<div class="newsletter-content">
+
+<h2>Únete a nuestra comunidad</h2>
+
+<p>Recibe promociones exclusivas y nuevos sabores antes que nadie</p>
+
+<div class="newsletter-form">
+
+<input type="email" placeholder="Tu correo...">
+
+<button>Suscribirse</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="footer-content">
+
+<div class="footer-section">
+<h4>ICEE SHOT</h4>
+<p>Bebidas que encienden tu noche</p>
+</div>
+
+<div class="footer-section">
+<h4>Enlaces Rápidos</h4>
+<ul>
+<li><a href="index.html">Inicio</a></li>
+<li><a href="menu.html">Menú</a></li>
+<li><a href="nosotros.html">Nosotros</a></li>
+</ul>
+</div>
+
+<div class="footer-section">
+<h4>Síguenos</h4>
+<div class="social-links">
+<a href="#" class="social-icon">📱</a>
+<a href="#" class="social-icon">📘</a>
+<a href="#" class="social-icon">📸</a>
+</div>
+</div>
+
+</div>
+
+<div class="footer-bottom">
+© 2026 ICEE SHOT - Todos los derechos reservados
+</div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
